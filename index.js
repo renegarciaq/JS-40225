@@ -1,48 +1,48 @@
-let totalCompra = 0
-let productoSeleccionado = parseInt(prompt("Ingresa el numero del producto que quieres comprar: 1.Aros - 2.Anillo - 3.Collar - 4.Reloj"))
-let seguirComprando = true
-let decision
+let total = 0
+let selectedItem = parseInt(prompt("Ingresa el numero del producto que quieres comprar: 1.Aros - 2.Anillo - 3.Collar - 4.Reloj"))
+let keepShopping = true
+let cart
 
-while (seguirComprando === true) {
-    if (productoSeleccionado === 1) {
-        totalCompra = totalCompra + 50
-    } else if (productoSeleccionado === 2) {
-        totalCompra = totalCompra + 100
-    } else if (productoSeleccionado === 3) {
-        totalCompra = totalCompra + 150
-    } else if (productoSeleccionado === 4) {
-        totalCompra = totalCompra + 200
+while (keepShopping === true) {
+    if (selectedItem === 1) {
+        total = total + 50
+    } else if (selectedItem === 2) {
+        total = total + 100
+    } else if (selectedItem === 3) {
+        total = total + 150
+    } else if (selectedItem === 4) {
+        total = total + 200
     } else {
-        productoSeleccionado = parseInt(prompt("Ingresa un numero de la lista: 1.Aros - 2.Anillo - 3.Collar - 4.Reloj"))
+        selectedItem = parseInt(prompt("Ingresa un numero de la lista: 1.Aros - 2.Anillo - 3.Collar - 4.Reloj"))
         continue
     }
 
-    decision = parseInt(prompt("Deseas agregar otro producto? 1.Si - 2.No"))
-    if (decision === 1) {
-        productoSeleccionado = parseInt(prompt("Ingresa el numero del producto que quieres comprar: 1.Aros - 2.Anillo - 3.Collar - 4.Reloj"))
-    } else if (decision === 2) {
-        seguirComprando = false
+    cart = parseInt(prompt("Deseas agregar otro producto? 1.Si - 2.No"))
+    if (cart === 1) {
+        selectedItem = parseInt(prompt("Ingresa el numero del producto que quieres comprar: 1.Aros - 2.Anillo - 3.Collar - 4.Reloj"))
+    } else if (cart === 2) {
+        keepShopping = false
     }
 }
 
-alert("el valor neto es de: " + totalCompra)
+alert("el total neto es de: " + total)
 
-function precioDescuento(valor) {
-    let descuento = 0
+function discountPrice(valor) {
+    let discount = 0
     if (valor <= 100) {
-        descuento = 10
+        discount = 10
     } else if (valor > 100 && valor <= 200) {
-        descuento = 15
+        discount = 15
     } else if (valor > 200 && valor <= 300) {
-        descuento = 20
+        discount = 20
     } else {
-        descuento = 25
+        discount = 25
     }
-    let valorDescuento = valor * (descuento / 100)
-    valor = valor - valorDescuento
+    let discountValue = valor * (discount / 100)
+    valor = valor - discountValue
     return valor
 }
-let valorConDescuento = precioDescuento(totalCompra)
+let valorConDescuento = discountPrice(total)
 alert("el total con descuento neto es de: " + valorConDescuento)
 
 function precioConIva(valor) {
@@ -51,4 +51,4 @@ function precioConIva(valor) {
 }
 
 let valorFinalIva = precioConIva(valorConDescuento)
-alert("El valor final con IVA es de: "+valorFinalIva)
+alert("El total final con IVA es de: "+valorFinalIva)
