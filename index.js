@@ -2,17 +2,31 @@ let total = 0
 let selectedItem = parseInt(prompt("Ingresa el numero del producto que quieres comprar: 1.Aros - 2.Anillo - 3.Collar - 4.Reloj"))
 let keepShopping = true
 let cart
+let products = []
+
+class Product {
+    constructor(name, price, id) {
+        this.name = name;
+        this.price = price;
+        this.id = id;
+    }
+}
+const aros = new Product("Aros", 50, 1);
+products.push(aros)
+const anillo = new Product("Anillo", 100, 2);
+products.push(anillo)
+const collar = new Product("Collar", 150, 3);
+products.push(collar)
+const reloj = new Product("Reloj", 200, 4);
+products.push(reloj)
+
 
 while (keepShopping === true) {
-    if (selectedItem === 1) {
-        total = total + 50
-    } else if (selectedItem === 2) {
-        total = total + 100
-    } else if (selectedItem === 3) {
-        total = total + 150
-    } else if (selectedItem === 4) {
-        total = total + 200
-    } else {
+    const requestedProduct = products.find(prod => prod.id === selectedItem)
+    if (requestedProduct) {
+        total = total + requestedProduct.price
+    }
+    else {
         selectedItem = parseInt(prompt("Ingresa un numero de la lista: 1.Aros - 2.Anillo - 3.Collar - 4.Reloj"))
         continue
     }
@@ -40,15 +54,15 @@ function discountPrice(valor) {
     }
     let discountValue = valor * (discount / 100)
     valor = valor - discountValue
-    return valor
+    return Math.round(valor)
 }
 let valorConDescuento = discountPrice(total)
 alert("el total con descuento neto es de: " + valorConDescuento)
 
 function precioConIva(valor) {
-    const iva = valor * (19/100)
-    return valor + iva
+    const iva = valor * (19 / 100)
+    return Math.round(valor + iva)
 }
 
 let valorFinalIva = precioConIva(valorConDescuento)
-alert("El total final con IVA es de: "+valorFinalIva)
+alert("El total final con IVA es de: " + valorFinalIva)
