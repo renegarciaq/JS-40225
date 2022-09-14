@@ -12,13 +12,11 @@ class Product {
     }
 }
 const aros = new Product("Aros", 50, 1);
-products.push(aros)
 const anillo = new Product("Anillo", 100, 2);
-products.push(anillo)
 const collar = new Product("Collar", 150, 3);
-products.push(collar)
 const reloj = new Product("Reloj", 200, 4);
-products.push(reloj)
+
+products.push(aros, anillo, collar, reloj)
 
 
 while (keepShopping === true) {
