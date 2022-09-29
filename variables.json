@@ -3,24 +3,24 @@
         "precio": 278900,
         "id": 1,
         "title": "Anillo Solitario Oro Amarillo 18 K Circón",
-        "thumbnailUrl": "../multimediaJP/anillo1.png"
+        "thumbnailUrl": "./multimediaJP/anillo1.png"
     },
     {
         "precio": 229900,
         "id": 2,
         "title": "Par de Aros Oro amarillo 18 K Flor",
-        "thumbnailUrl": "../multimediaJP/aros1.png"
+        "thumbnailUrl": "./multimediaJP/aros1.png"
     },
     {
         "precio": 38900,
         "id": 3,
         "title": "Collar Spark de Plata con Cristal Cube Blanco",
-        "thumbnailUrl": "../multimediaJP/collar1.png"
+        "thumbnailUrl": "./multimediaJP/collar1.png"
     },
     {
         "precio": 119000,
         "id": 4,
         "title": "Reloj Festina Mujer Calendario Titanium",
-        "thumbnailUrl": "../multimediaJP/reloj1.png"
+        "thumbnailUrl": "./multimediaJP/reloj1.png"
     }
 ]
