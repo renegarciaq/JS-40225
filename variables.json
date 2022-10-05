@@ -6,21 +6,70 @@
         "thumbnailUrl": "./multimediaJP/anillo1.png"
     },
     {
-        "precio": 229900,
+        "precio": 1620500,
         "id": 2,
-        "title": "Par de Aros Oro amarillo 18 K Flor",
+        "title": "Anillo Gemas Cintillo Doble Zafiro y Brilllantes",
+        "thumbnailUrl": "./multimediaJP/anillo2.png"
+    },
+    {
+        "precio": 966000,
+        "id": 3,
+        "title": "Anillo Solitario Inside",
+        "thumbnailUrl": "./multimediaJP/anillo3.png"
+    },
+    {
+        "precio": 229900,
+        "id": 4,
+        "title": "Par de Aros Oro amarillo 18K Flor",
         "thumbnailUrl": "./multimediaJP/aros1.png"
     },
     {
+        "precio": 36990,
+        "id": 5,
+        "title": "Par de Aros Spark Colgantes Plata Bañada en Oro 18K Cristales",
+        "thumbnailUrl": "./multimediaJP/aros2.png"
+    },
+    {
+        "precio": 34990,
+        "id": 6,
+        "title": "Par de Aros Spark Plata Cristales",
+        "thumbnailUrl": "./multimediaJP/aros3.png"
+    },
+    {
         "precio": 38900,
-        "id": 3,
+        "id": 7,
         "title": "Collar Spark de Plata con Cristal Cube Blanco",
         "thumbnailUrl": "./multimediaJP/collar1.png"
     },
     {
+        "precio": 403000,
+        "id": 8,
+        "title": "Collar Oro Amarillo 18K con colgantes tricolor de Oro Amarillo, Blanco y Rosa",
+        "thumbnailUrl": "./multimediaJP/collar2.png"
+    },
+    {
+        "precio": 354900,
+        "id": 9,
+        "title": "Collar Oro 18K Turbillon Bolitas Tricolor Niña",
+        "thumbnailUrl": "./multimediaJP/collar3.png"
+    },
+    {
         "precio": 119000,
-        "id": 4,
-        "title": "Reloj Festina Mujer Calendario Titanium",
+        "id": 10,
+        "title": "Reloj Mujer Festina Calendario Titanium",
         "thumbnailUrl": "./multimediaJP/reloj1.png"
+    },
+    {
+        "precio": 1242900,
+        "id": 11,
+        "title": "Reloj Mujer Conquest",
+        "thumbnailUrl": "./multimediaJP/reloj2.png"
+    },
+    {
+        "precio": 99990,
+        "id": 12,
+        "title": "RelojMujer G-Shock Baby-G",
+        "thumbnailUrl": "./multimediaJP/reloj3.png"
     }
+    
 ]
